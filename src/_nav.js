@@ -14,6 +14,79 @@ const _nav = [
       text: 'NEW',
     },
   },
+
+  {
+    _component: 'CNavTitle',
+    anchor: 'Contact ManageMent',
+  },
+
+  {
+    _component: 'CNavGroup',
+    anchor: 'Contact Details',
+    icon: <CIcon name="cil-star" customClasses="nav-icon" />,
+    items: [
+      {
+        _component: 'CNavItem',
+        as: NavLink,
+        anchor: 'ContactList',
+        to: '/details',
+      },
+      {
+        _component: 'CNavItem',
+        as: NavLink,
+        anchor: 'Add Contact',
+        to: '/add',
+      },
+    ],
+  },
+
+  
+  {
+    _component: 'CNavTitle',
+    anchor: 'Brand Category Food',
+  },
+
+  {
+    _component: 'CNavGroup',
+    anchor: 'Brand Details',
+    icon: <CIcon name="cil-star" customClasses="nav-icon" />,
+    items: [
+      {
+        _component: 'CNavItem',
+        as: NavLink,
+        anchor: 'Brand List',
+        to: '/brand_details',
+      },
+      {
+        _component: 'CNavItem',
+        as: NavLink,
+        anchor: 'Add Brand',
+        to: '/add_brand',
+      },
+    ],
+  },
+
+  {
+    _component: 'CNavGroup',
+    anchor: 'Category Details',
+    icon: <CIcon name="cil-star" customClasses="nav-icon" />,
+    items: [
+      {
+        _component: 'CNavItem',
+        as: NavLink,
+        anchor: 'Category List',
+        to: '/category_details',
+      },
+      {
+        _component: 'CNavItem',
+        as: NavLink,
+        anchor: 'Add Category',
+        to: '/add_category',
+      },
+    ],
+  },
+
+
   {
     _component: 'CNavTitle',
     anchor: 'Theme',
@@ -315,6 +388,18 @@ const _nav = [
         to: '/500',
       },
     ],
+  },
+
+  {
+    _component: 'CNavItem',
+    as: NavLink,
+    anchor: 'FAQ',
+    to: '/faq',
+    icon: <CIcon name="cil-star" customClasses="nav-icon" />,
+    badge: {
+      color: 'info',
+      text: 'NEW',
+    },
   },
 ]
 
